@@ -11,9 +11,17 @@ content{
   left: 50%;
   transform: translate(-50%,-50%);
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
-img{
+.image-logo{
+  width: 275px;
+  height: auto;
+  margin: auto;
+}
+
+.image-drone{
   width: auto;
   height: auto;
   filter: drop-shadow(0 15px 15px rgba(0,0,0,1));
@@ -26,7 +34,7 @@ h1{
   color: white;
   font-family: 'Montserrat';
   font-weight: 900;
-  margin: 0 0 10px 0;
+  margin: 10px 0 5px 0;
   user-select: none;
 }
 
@@ -50,7 +58,11 @@ a:hover{
 }
 
 @media(max-width:767px){
-  img{
+  .image-logo{
+    width: 200px;
+  }
+
+  .image-drone{
     max-width: 100vw;
     max-height: 100vh;
   }
