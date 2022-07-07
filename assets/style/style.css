@@ -19,6 +19,8 @@ content{
   width: 275px;
   height: auto;
   margin: auto;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .image-drone{
